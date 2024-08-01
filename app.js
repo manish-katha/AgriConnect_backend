@@ -4,7 +4,6 @@ import userRouter from "./routes/user.js";
 import cors from "cors";
 import { errorMiddleware } from "./middleware/error.js";
 import cookieParser from "cookie-parser";
-// import taskRouter from "./routes/task.js";
 
 export const app = express();
 
@@ -20,7 +19,6 @@ app.use(
 );
 
 app.use("/api/v1/users", userRouter);
-// app.use("/api/v1/tasks", taskRouter);
 
 app.get("/", (req, res) => {
   res.send("hello");
