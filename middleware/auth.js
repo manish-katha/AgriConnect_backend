@@ -7,6 +7,6 @@ export const isAuthenticate = async (req, res, next) => {
       success: false,
       message: "Login first",
     });
-
+   
   next();
 };
